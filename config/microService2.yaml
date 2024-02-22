@@ -1,0 +1,111 @@
+baseConfig:
+  etcdConfig:
+    endpoints:
+      - "http://192.168.64.3:2379"
+    user: "root"
+    password: "BGfLwhJfcw"
+    timeout: "300ms"
+env: "dev"
+mysql:
+  read:
+    charset: "utf8mb4"
+    database: "app"
+    host: "192.168.64.3:3306"
+    mysql_conn_max_lifetime: 5
+    mysql_idle: 10
+    mysql_max_connections: 40
+    password: "6jrBHdPD6a"
+    time_zone: "+8:00"
+    user: "root"
+  write:
+    charset: "utf8mb4"
+    database: "app"
+    host: "192.168.64.3:3306"
+    mysql_conn_max_lifetime: 5
+    mysql_idle: 10
+    mysql_max_connections: 40
+    password: "6jrBHdPD6a"
+    time_zone: "+8:00"
+    user: "root"
+tiDB:
+  read:
+    charset: "utf8mb4"
+    database: "app"
+    host: "192.168.64.3:3306"
+    mysql_conn_max_lifetime: 5
+    mysql_idle: 10
+    mysql_max_connections: 40
+    password: "6jrBHdPD6a"
+    time_zone: "+8:00"
+    user: "root"
+  write:
+    charset: "utf8mb4"
+    database: "app"
+    host: "192.168.64.3:3306"
+    mysql_conn_max_lifetime: 5
+    mysql_idle: 10
+    mysql_max_connections: 40
+    password: "6jrBHdPD6a"
+    time_zone: "+8:00"
+    user: "root"
+rocketMq:
+  dsn:
+    - "192.168.64.3:19876"
+  namespace: ""
+  producer:
+    send_msg_timeout: "2s"
+    retry_times: 2
+  consumer:
+    consumer_model: 2
+    from_where: 1
+    consume_orderly: false
+    consume_message_batch_max_size: 1
+    retry_times: 5
+    max_reconsume_times: 5
+    auto_commit: false
+    tag_expression: ""
+db:
+  type: "mysql"
+  server: "192.168.64.3"
+  port: 3306
+  database: "app"
+  user: "root"
+  password: "6jrBHdPD6a"
+  maxIdleConns: 100
+  maxOpenConns: 100
+  maxLeftTime: "300ms"
+nsqCfg:
+  lookups:
+    - "192.168.64.3:4161"
+  topic: "topic1"
+  writers:
+    - "192.168.64.3:4150"
+redis:
+  name: "iooikaak.microservice1"
+  proto: "tcp"
+  addr: "192.168.64.3:6379"
+  auth: "RdIwJZKSAh"
+  dialTimeout: "200ms"
+  readTimeout: "200ms"
+  writeTimeout: "200ms"
+  expire: 10
+  pool:
+    active: 200
+    idle: 200
+    idleTimeout: "80s"
+shenceCfg:
+  host: "https://localhost"
+  project: "test"
+  switch: true
+  timeout: 1
+snowflakeMachine: 1
+elastic:
+  addrs:
+    - "http://192.168.64.3:9200"
+  username: ""
+  password: ""
+  healthcheckEnabled: true
+  snifferEnabled: false
+  healthtimeout: "300ms"
+  snifferTimeout: "300ms"
+jaeger: "http://192.168.64.3:14268/api/traces"
