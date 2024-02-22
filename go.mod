@@ -1,10 +1,10 @@
 module github.com/iooikaak/microService2
 
-go 1.22
+go 1.21
 
 require (
-	github.com/iooikaak/frame v0.0.0-20240222112227-92256e7348b9
-	github.com/iooikaak/pb v0.0.0-20240222122912-3e346619bbac
+	github.com/iooikaak/frame v0.0.0-20240222150429-22cd4d3985bc
+	github.com/iooikaak/pb v0.0.0-20240222150701-9f1a93a2268e
 	github.com/olivere/elastic/v7 v7.0.32
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/prometheus/client_golang v1.18.0

@@ -9,12 +9,15 @@
       "timeout": 3
     }
   },
+  "SelfURIs": [
+    "/services/v1/microServices2"
+  ],
   "env": "dev",
   "mysql": {
     "read": {
       "charset": "utf8mb4",
       "database": "app",
-      "host": "cyril.develop:3306",
+      "host": "127.0.0.1:3306",
       "mysql_conn_max_lifetime": 5,
       "mysql_idle": 10,
       "mysql_max_connections": 40,
@@ -25,7 +28,7 @@
     "write": {
       "charset": "utf8mb4",
       "database": "app",
-      "host": "cyril.develop:3306",
+      "host": "127.0.0.1:3306",
       "mysql_conn_max_lifetime": 5,
       "mysql_idle": 10,
       "mysql_max_connections": 40,
@@ -38,7 +41,7 @@
     "read": {
       "charset": "utf8mb4",
       "database": "app",
-      "host": "cyril.develop:3306",
+      "host": "127.0.0.1:3306",
       "mysql_conn_max_lifetime": 5,
       "mysql_idle": 10,
       "mysql_max_connections": 40,
@@ -49,7 +52,7 @@
     "write": {
       "charset": "utf8mb4",
       "database": "app",
-      "host": "cyril.develop:3306",
+      "host": "127.0.0.1:3306",
       "mysql_conn_max_lifetime": 5,
       "mysql_idle": 10,
       "mysql_max_connections": 40,
@@ -60,7 +63,7 @@
   },
   "rocketMq": {
     "dsn": [
-      "http://cyril.develop:9876"
+      "http://127.0.0.1:9876"
     ],
     "namespace": "",
     "producer": {
@@ -80,7 +83,7 @@
   },
   "db": {
     "type": "mysql",
-    "server": "cyril.develop",
+    "server": "127.0.0.1",
     "port": 3306,
     "database": "app",
     "user": "root",
@@ -91,17 +94,17 @@
   },
   "nsqCfg": {
     "lookups": [
-      "http://cyril.develop:4161"
+      "127.0.0.1:4161"
     ],
     "topic": "topic1",
     "writers": [
-      "http://cyril.develop:4150"
+      "127.0.0.1:4150"
     ]
   },
   "redis": {
     "name": "iooikaak.microservice2",
     "proto": "tcp",
-    "addr": "http://cyril.develop:6379",
+    "addr": "127.0.0.1:6379",
     "auth": "",
     "dialTimeout": "200ms",
     "readTimeout": "200ms",
@@ -122,7 +125,7 @@
   "snowflakeMachine": 1,
   "elastic": {
     "addrs": [
-      "http://cyril.develop:9200"
+      "http://127.0.0.1:9200"
     ],
     "username": "",
     "password": "",
@@ -131,5 +134,5 @@
     "healthtimeout": 3,
     "snifferTimeout": 3
   },
-  "jaeger": "http://cyril.develop:14268/api/traces"
+  "jaeger": "http://127.0.0.1:14268/api/traces"
 }

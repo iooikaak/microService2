@@ -3,20 +3,18 @@ package config
 import (
 	"flag"
 	"github.com/iooikaak/frame/cache/redis/v8"
-	"github.com/iooikaak/frame/json"
-	"github.com/iooikaak/microService2/model/enum"
-	"io"
-	"io/ioutil"
-	"os"
-	"path/filepath"
-
 	"github.com/iooikaak/frame/elasticsearch"
 	"github.com/iooikaak/frame/gorm"
+	"github.com/iooikaak/frame/json"
 	rocketmqConfig "github.com/iooikaak/frame/mq/rocketmq/config"
+	"github.com/iooikaak/microService2/model/enum"
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go"
 	jaegercfg "github.com/uber/jaeger-client-go/config"
 	jaegerlog "github.com/uber/jaeger-client-go/log"
+	"io"
+	"os"
+	"path/filepath"
 
 	"github.com/iooikaak/frame/config"
 	"github.com/iooikaak/frame/config/paladin"
@@ -202,7 +200,7 @@ func Init() (err error) {
 	if err != nil {
 		return
 	}
-	jsonRead, err := ioutil.ReadFile(jsonFIle)
+	jsonRead, err := os.ReadFile(jsonFIle)
 	if err != nil {
 		return
 	}

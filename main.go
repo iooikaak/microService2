@@ -40,10 +40,11 @@ func main() {
 
 	//远程读取apollo配置文件
 	//初始化apollo
-	if err := config.ApolloInit(); err != nil {
-		panic(err)
-	}
+	//if err := config.ApolloInit(); err != nil {
+	//	panic(err)
+	//}
 	//开启jaeger追踪
+	config.Init()
 	tracer, closer, err := config.CreateTracer(enum.ServiceName.String())
 	defer closer.Close()
 	if err != nil {
