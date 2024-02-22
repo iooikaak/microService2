@@ -1,2 +1,1 @@
-## Dao
-Dao begets One (nothingness; or reason of being), One begets Two (yin and yang), Two begets Three (Heaven, Earth and Man; or yin, yang and breath qi), Three begets all things. All things carry the femals and embrace the male. And by breathing together, they live in harmony...
+
