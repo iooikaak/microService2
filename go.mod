@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/iooikaak/frame v0.0.0-20240222150429-22cd4d3985bc
-	github.com/iooikaak/pb v0.0.0-20240222150701-9f1a93a2268e
+	github.com/iooikaak/pb v0.0.0-20240223091925-c2ee3806c097
 	github.com/olivere/elastic/v7 v7.0.32
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/prometheus/client_golang v1.18.0
@@ -79,9 +79,6 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 	stathat.com/c/consistent v1.0.0 // indirect
-)
-
-require (
 	github.com/BurntSushi/toml v1.3.2 // indirect
 	github.com/gomodule/redigo v1.8.9 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
